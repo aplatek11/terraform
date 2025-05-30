@@ -1,12 +1,12 @@
 variable "filename" {
-    default = "pets.txt"
-    type = string
-    description = "the path of local file"
+  default     = "pets.txt"
+  type        = string
+  description = "the path of local file"
 }
 
 variable "content" {
-    default = "I Love pets!"
-    description = "the content of the file"
+  default     = "I Love pets!"
+  description = "the content of the file"
 }
 
 #variable file-content {
