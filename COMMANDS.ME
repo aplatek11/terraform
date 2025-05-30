@@ -1,0 +1,45 @@
+# terraform -help
+Will output the help on the screen
+
+# terraform <command> -help
+Will output the sub-commands on the screen
+
+# terraform init
+Initializes a terraform working directory
+
+# terraform plan
+Creates and execution plan, showing what actions will be taken
+
+# terraform apply
+Will apply the changes after approving those changes
+
+# terraform validate
+Checks to see if the syntax is correct, will also show the errors
+
+# terraform fmt
+This will scan the config files and formats into a canonical format
+
+# terraform show
+Prints out the current state and attributes as seen by terraform
+
+# terraform show -json
+Will print out in JSON format
+
+# terraform providers
+See alist of all providers in the directory
+
+# terraform providers mirrot <directory>
+Will mirror providers into a new pod
+
+# terraform output
+Will print out all output in the directory
+
+# terraform output <specific value name>
+Will print out that specific value
+
+# terraform apply -refresh-only
+Will sync terraform with the real world infrastructure
+
+# terraform graph
+Used to create a visual representation of dependicies of the configuration or execution plan
+
