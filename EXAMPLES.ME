@@ -114,3 +114,15 @@ resource "aws_instance" "webserver" {
     ]
   }
 }
+
+# Data Block
+# Read files outside the Infrastructure
+resource "local_file" "pet"{
+  filename = "/root/pets.txt"
+  contnent = data.local_file.dog.content
+}
+  
+data "local_file "dog" {
+  filename = "/root/dog.txt"
+}
+  
